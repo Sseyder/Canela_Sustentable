@@ -25,7 +25,7 @@ body {
   font-size: 16px; }
 
 h1, h2, h3, h4 {
-  color: #4e287f;
+  color: #50CB93;
   font-family: 'Vollkorn', serif;
   font-weight: 500;
   letter-spacing: -.05rem;
@@ -69,6 +69,7 @@ h4 {
 .highlighted-purple {
   background-color: #decff0; }
 
+/*CSS de Botones*/
 .btn {
   padding: .7em 1em;
   min-width: 205px;
@@ -89,7 +90,7 @@ h4 {
   padding: .7em 1em;
   min-width: 205px;
   min-height: 50px;
-  border: 1px solid #4e287f;
+  border: 1px solid #54436B;
   border-radius: .5em;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   font-family: 'Exo', sans-serif;
@@ -99,16 +100,16 @@ h4 {
   text-align: center;
   text-decoration: none;
   letter-spacing: .07rem;
-  color: #4e287f; }
+  color: #54436B; }
 
 .btn:hover {
   color: #fff883;
-  background: #361c58;
+  background: #54436B;
   border-radius: .3em;
   transition: all 1s; }
 
 .btn--primary:hover {
-  color: #4e287f; }
+  color: #54436B; }
 
 .heartbeat {
   -webkit-animation: heartbeat 2s ease-in-out 3 both;
@@ -172,6 +173,7 @@ h4 {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; } }
 
+/*CSS del Newsletter Footer*/
 .footer-newsletter {
   display: flex;
   flex-direction: column;
@@ -187,7 +189,7 @@ h4 {
   .footer-newsletter__icon {
     margin: auto;
     font-size: 5em;
-    color: #4e287f; }
+    color: #54436B; }
     @media only screen and (min-width: 992px) {
       .footer-newsletter__icon {
         margin: 0; } }
@@ -231,12 +233,13 @@ textarea {
   border: 2px solid transparent;
   border-radius: 4px;
   font-family: 'Exo', sans-serif;
-  color: #4e287f;
+  color: #54436B;
   transition: .3s ease all; }
 
+/*CSS del la barra de navegador*/
 .nav {
   background-color: #fffbb6;
-  opacity: 90%;
+  opacity: 100%;
   box-shadow: 0px 5px 10px -9px #302f2f; }
   .nav__logo {
     width: 5em; }
@@ -247,10 +250,10 @@ textarea {
     font-family: 'Exo', sans-serif;
     font-weight: 500;
     font-size: 1rem;
-    color: #4e287f; }
+    color: #54436B; }
     .nav__link:hover {
       color: #fff883;
-      background: #361c58;
+      background: #54436B;
       border-radius: .3em;
       transition: all 1s; }
     @media screen and (min-width: 992px) {
@@ -273,10 +276,10 @@ textarea {
       text-align: left; } }
 
 .dropdown__item {
-  color: #4e287f; }
+  color: #54436B; }
   .dropdown__item:hover {
     color: #fff883;
-    background: #361c58;
+    background: #54436B;
     border-radius: .3em;
     transition: all 1s; }
 
@@ -285,21 +288,22 @@ textarea {
   top: 15px;
   right: 35px;
   font-size: 2rem;
-  color: #361c58;
+  color: #54436B;
   border: none;
   background-color: transparent; }
 
 .text-shop {
   padding-left: .5em;
   text-transform: uppercase;
-  color: #361c58; }
+  color: #54436B; }
 
+  /*CSS hero*/
 .hero {
   display: grid;
   place-content: center;
   height: 100vh;
   width: 100%;
-  background-image: url(../multimedia/hero-amarillo.jpg);
+  background-image: url(/multimedia/hojas_background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -313,6 +317,7 @@ textarea {
   .hero .btn {
     margin: 1em auto; }
 
+/*CSS Footer*/
 .btn--footer {
   display: block;
   text-align: center; }
@@ -325,7 +330,7 @@ textarea {
   justify-items: center;
   align-items: center;
   padding: 1em 0;
-  background: #361c58; }
+  background: #54436B; }
   @media only screen and (min-width: 768px) {
     .footer-info {
       grid-template-columns: repeat(2, minmax(min-content, 1fr));
@@ -374,7 +379,9 @@ textarea {
     margin: auto; }
     @media only screen and (min-width: 992px) {
       .flex-container img {
-        margin: 0; } }
+        margin: 0; 
+        width: 300px;
+        height: 300px; } }
   @media only screen and (min-width: 992px) {
     .flex-container {
       display: flex;
@@ -394,9 +401,11 @@ textarea {
     @media only screen and (min-width: 1200px) {
       .flex-container__item {
         padding: .5em;
-        max-width: 392px; } }
+        max-width: 392px;} }
     .flex-container__item a img {
-      transition: .3s; }
+      transition: .3s;
+      width: 350px;
+      height: 300px; }
     .flex-container__item a img:hover {
       transform: scale(1.1); }
   .flex-container__text {
@@ -457,9 +466,10 @@ textarea {
     font-style: italic; }
   .review__name {
     margin: auto;
-    color: #4e287f;
+    color: #54436B;
     font-weight: 600; }
 
+/*CSS Productos*/
 .services-container, .services-container--reverse {
   display: flex;
   flex-flow: column nowrap;
@@ -528,6 +538,7 @@ textarea {
     .services-container--reverse__text {
       min-width: 900px; } }
 
+/*CSS Novedades*/
 .blog-introduction {
   margin: 0 auto;
   width: 90%;
@@ -580,7 +591,7 @@ textarea {
     .blog-container__content a {
       font-size: 1rem;
       font-weight: 500;
-      color: #4e287f; }
+      color: #54436B; }
       @media only screen and (min-width: 992px) {
         .blog-container__content a {
           font-size: 1.2rem; } }
@@ -604,13 +615,14 @@ textarea {
   justify-content: center;
   margin: 3em 0; }
   .pagination a.active {
-    background-color: #4e287f;
+    background-color: #54436B;
     color: #ffffffea;
     border-radius: 5px; }
   .pagination a {
     padding: .75em 1em;
-    color: #4e287f; }
+    color: #54436B; }
 
+/*CSS Sobre Nosotros*/
 .about-container {
   display: flex;
   flex-direction: column;
@@ -646,6 +658,7 @@ textarea {
         padding: 0 1em;
         text-align: left; } }
 
+/*CSS Contacto*/
 .contact-container {
   display: flex;
   flex-flow: column nowrap;
@@ -662,9 +675,9 @@ textarea {
     .contact-container__intro li {
       padding: .5em; }
     .contact-container__intro .iconify {
-      color: #4e287f; }
+      color: #54436B; }
   .contact-container__form {
-    border: 1px solid #4e287f;
+    border: 1px solid #54436B;
     border-radius: 0.1875em;
     padding: 1em; }
     @media only screen and (min-width: 768px) {
@@ -673,13 +686,13 @@ textarea {
 
 .btn--form {
   background-color: #fffbb6;
-  color: #4e287f;
+  color: #54436B;
   display: block;
   margin: .5em 0;
   width: 100%; }
   .btn--form:hover {
     color: #fff883;
-    background: #361c58;
+    background: #54436B;
     border-radius: .3em;
     transition: all 1s; }
 
@@ -696,7 +709,7 @@ textarea {
   transition: .3s ease all; }
 
 .form__input:focus {
-  border: 2px solid #361c58;
+  border: 2px solid #54436B;
   outline: none;
   box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4); }
 
@@ -820,7 +833,7 @@ textarea {
 #carritoCerrar {
   align-self: flex-end;
   font-size: 1.5rem;
-  color: #361c58;
+  color: #54436B;
   border: none;
   background-color: transparent; }
 
@@ -853,7 +866,7 @@ textarea {
   height: 17px;
   text-align: center;
   font-size: .8rem;
-  background: #361c58;
+  background: #54436B;
   border-radius: 50%;
   color: #fffbb6;
   text-decoration: none; }
@@ -871,7 +884,7 @@ textarea {
       font-size: 2.2rem; } }
 
 .btn-eliminar {
-  color: #361c58;
+  color: #54436B;
   cursor: pointer; }
 
 .carrito-vacio {
@@ -893,10 +906,10 @@ textarea {
   min-width: 100vw; }
   .agregado-carrito-visible p {
     font-weight: 600;
-    color: #361c58;
+    color: #54436B;
     margin-left: .5em; }
   .agregado-carrito-visible .iconify {
-    color: #361c58; }
+    color: #54436B; }
 
 .shop-container {
   display: flex;
@@ -964,7 +977,7 @@ textarea {
     padding: .5em;
     align-self: flex-end;
     font-size: 1.5rem;
-    color: #361c58;
+    color: #54436B;
     border: none;
     background-color: transparent; }
   .warning-alert p {
