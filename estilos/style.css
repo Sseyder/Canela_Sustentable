@@ -936,6 +936,10 @@ textarea {
       place-items: center;
       grid-gap: 1rem;
       grid-template-columns: repeat(3, minmax(350px, 1fr)); } }
+    .shop-container__item img {
+        height: 450px;
+        width: 450px;
+      }
   .shop-container__item {
     padding: 2em 0.5em;
     width: 350px; }
