@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetarios | Lic. Sofia Duca Nutricionista</title>
+    <meta name="description" content="Para adoptar hábitos alimenticios saludables te propongo 3 maneras de lograrlo: consulta online, consulta presencial o a tu ritmo con los planes alimentarios.">
+    <meta name="keywords" content="dieta equilibrada, nutricionista online, buena alimentacion, nutricionista, nutricion deportiva, alimentacion balanceada">
+    <link rel="icon" href="multimedia/flavicon.png" sizes="16x16" type="image/png">
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- mi css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- mi JS -->
+    <script src="~/../js/shop.js" defer></script>
+    <script src="~/../js/jquery-3.6.0.min.js" defer></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+    <!-- Modal carrito -->
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <div class="modal-carrito-header">
+                <button id="carritoCerrar"><span class="iconify" data-icon="clarity:window-close-line" data-inline="false"></span></button>
+                <h4>MI CARRITO</h4>
+            </div>
+            <div id="carritoVacio" class="carrito-vacio">
+                <p>No hay productos en tu carrito</p>
+            </div>
+            <div id="contenedorCarrito">
+            </div>
+            <div class="modal-carrito-footer">
+                <p class="precio-producto">Total: $<span id="precioTotal"></span></p>
+                <a href="checkout.html" class="btn">Ir a mi carrito</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Warning agregar al carrito -->
+    <!-- class="warning-visible" -->
+    <div class="warning-contenedor">
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top nav flex-wrap">
+            <div class="container-fluid">
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="multimedia/menu.svg" class="nav__toggle" alt="toggle">
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <img src="multimedia/logo.png" alt="sofia duca nutricionista logo" class="nav__logo">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center me-auto mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item nav__item">
+                            <a class="nav-link nav__link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link nav__link" href="shop.html">Tienda</a>
+                        </li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link nav__link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link nav__link" href="sobremi.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link nav__link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex" id="botonAbrir">
+                    <span class="iconify icon-shop icono-carrito" data-icon="ant-design:shopping-cart-outlined" data-inline="false"></span>
+                    <span class="contador-carrito" id="contadorCarrito"></span>
+                </div>
+            </div>
+
+            <div id="agregadoCarrito">
+                <div class="agregado-carrito-visible">
+                    <span class="iconify" data-icon="bi:check-circle-fill" data-inline="false"></span>
+                    <p class="producto-agregado">Producto agregado al carrito</p>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <h1>Elegí la mejor opción para vos...</h1>
+        </section>
+    </header>
+
+    <main>
+        <!-- introducción blog -->
+        <section class="shop-introduction">
+            <h2>Bienvenido <span id="nombre"> </span> a mi tienda online</h2>
+            <p>No elijas la dieta del momento, elegí un estilo de vida que puedas mantener para siempre.</p>
+        </section>
+
+        <!-- selector desplegable -->
+        <section class="select-container">
+            <select name="select" class="select" id="categoria">
+                <option value="todos">Todos los servicios</option>
+                <option value="planes">Planes Alimentarios</option>
+                <option value="online">Consultas Online</option>
+                <option value="presenciales">Consultas Presenciales</option>
+                <option value="antropometria">Antropometría</option>
+                <option value="recetarios">Recetarios</option>
+
+            </select>
+        </section>
+
+        <!-- contenido shop -->
+        <section class="shop-container" id="servicios">
+        </section>
+
+        <!-- pagination -->
+        <!-- <section>
+            <ul class="pagination">
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul>
+        </section> -->
+    </main>
+
+    <footer>
+        <section>
+            <a href="#" class="btn btn--footer"> <span class="btn__text">Reservá tu turno</span></a>
+        </section>
+
+        <section class="footer-newsletter">
+            <span class="iconify footer-newsletter__icon" data-icon="fluent:mail-20-regular" data-inline="true"></span>
+
+            <form action="" method="" class="footer-newsletter__form">
+                <div class="footer-newsletter__inputs">
+                    <label for="fullname"></label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Nombre y Apellido" required>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                </div>
+
+                <div>
+                    <input type="submit" value="Suscribirme" class="btn btn__text footer-newsletter__btn">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer-info">
+            <div class="footer-info__item-1">
+                <img src="multimedia/logo-alternativo.png" class="footer-info__img" alt="logo">
+            </div>
+
+            <div class="footer-info__item-2">
+                <a href="#"><span class="footer-info__icon iconify" data-icon="bx:bxl-facebook-square" data-inline="true"></span></a>
+                <a href="https://api.whatsapp.com/send?phone=+5491141627151&text=Hola!%20Necesito%20ayuda%20" target="_blank"> <span class="footer-info__icon iconify" data-icon="dashicons:whatsapp" data-inline="true"></span></a>
+                <a href="#"><span class="footer-info__icon iconify" data-icon="ant-design:instagram-filled" data-inline="true"></span></a>
+            </div>
+
+            <div class="footer-info__item">
+                <p class="footer-info__text">Licenciada Sofía Duca</p>
+                <p class="footer-info__text">MN: 9061 - MP: 4720</p>
+                <p class="footer-info__text">Desarrollado por Antonella Duca</p>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
