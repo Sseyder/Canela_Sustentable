@@ -1,4 +1,21 @@
+/*CSS del Nav*/
 
-.nav {
-    background-color: white;
-}
+/* CSS section hero*/
+.hero {
+    display: grid;
+    place-content: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(/multimedia/flores_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center; }
+    @media only screen and (min-width: 1024px) {
+      .hero {
+        height: 70vh; } }
+    @media only screen and (min-width: 768px) {
+      .hero h1, .hero h2, .hero h3, .hero h4 {
+        max-width: 80vw; } }
+    .hero .btn {
+      margin: 1em auto; }
