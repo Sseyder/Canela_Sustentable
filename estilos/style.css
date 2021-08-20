@@ -1,12 +1,144 @@
-/*CSS del Nav*/
 
-/* CSS section hero*/
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&family=Vollkorn:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+main {
+  padding: 1em 0; }
+
+p {
+  line-height: 1.6em;
+  margin: 0; }
+
+.highlighted-yellow {
+  background-color: #fffdda; }
+
+.highlighted-purple {
+  background-color: #decff0; }
+
+body {
+  font-family: 'Exo', sans-serif;
+  font-weight: 400;
+  font-size: 16px; }
+
+h1, h2, h3, h4 {
+  color: #4e287f;
+  font-family: 'Vollkorn', serif;
+  font-weight: 500;
+  letter-spacing: -.05rem;
+  font-size: 3rem; }
+  @media only screen and (min-width: 768px) {
+    h1, h2, h3, h4 {
+      font-size: 3.5rem; } }
+  @media only screen and (min-width: 992px) {
+    h1, h2, h3, h4 {
+      font-size: 4rem; } }
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0; }
+  @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 3rem; } }
+  @media only screen and (min-width: 992px) {
+    h2 {
+      font-size: 3.5rem; } }
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  padding-top: .5em; }
+  @media only screen and (min-width: 768px) {
+    h3 {
+      font-size: 2rem; } }
+
+h4 {
+  margin-bottom: 0;
+  font-family: 'Exo', sans-serif;
+  font-size: 1.2rem; }
+  @media only screen and (min-width: 992px) {
+    h4 {
+      font-size: 1.5rem; } }
+
+.highlighted-yellow {
+  background-color: #fffdda; }
+
+.highlighted-purple {
+  background-color: #decff0; }
+
+/*CSS del Nav*/
+.nav {
+    background-color:white;
+    opacity: 100%;
+    box-shadow: 0px 5px 10px -9px #302f2f; }
+    .nav__logo {
+      width: 5em; }
+      @media screen and (min-width: 992px) {
+        .nav__logo {
+          width: 100px;
+          height: 100px; } }
+    .nav__link {
+      font-family: 'Exo', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      color: #4e287f; }
+      .nav__link:hover {
+        color: #95ce4a;
+        background: #515E63;
+        border-radius: .3em;
+        transition: all 1s; }
+      @media screen and (min-width: 992px) {
+        .nav__link {
+          font-size: 1rem; } }
+      @media screen and (min-width: 1200px) {
+        .nav__link {
+          font-size: 1.4rem; } }
+    .nav__item {
+      padding: 0 .8em; }
+    .nav__toggle {
+      width: 1.5em; }
+  
+  .dropdown__menu {
+    background: #fffbb6;
+    border: none;
+    text-align: center; }
+    @media only screen and (min-width: 992px) {
+      .dropdown__menu {
+        text-align: left; } }
+  
+  .dropdown__item {
+    color: #4e287f; }
+    .dropdown__item:hover {
+      color: #fff883;
+      background: #361c58;
+      border-radius: .3em;
+      transition: all 1s; }
+  
+  .icon-shop {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 2rem;
+    color: #361c58;
+    border: none;
+    background-color: transparent; }
+  
+  .text-shop {
+    padding-left: .5em;
+    text-transform: uppercase;
+    color: #361c58; }
+
+/* CSS Section Hero*/
 .hero {
     display: grid;
     place-content: center;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    background-image: url(/multimedia/flores_background.jpg);
+    background-image: url(/multimedia/hojas_background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,3 +151,162 @@
         max-width: 80vw; } }
     .hero .btn {
       margin: 1em auto; }
+
+/*CSS de los botones*/
+.btn {
+    padding: .7em 1em;
+    min-width: 205px;
+    min-height: 50px;
+    background: #4e287f;
+    border-radius: .5em;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .07rem;
+    color: #ffffffea; }
+  
+  .btn--primary {
+    padding: .7em 1em;
+    min-width: 205px;
+    min-height: 50px;
+    border: 1px solid #4e287f;
+    border-radius: .5em;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .07rem;
+    color: #4e287f; }
+  
+  .btn:hover {
+    color: #fff883;
+    background: #361c58;
+    border-radius: .3em;
+    transition: all 1s; }
+  
+  .btn--primary:hover {
+    color: #4e287f; }
+  
+  .heartbeat {
+    -webkit-animation: heartbeat 2s ease-in-out 3 both;
+    animation: heartbeat 2s ease-in-out 3 both; }
+  
+  @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out; }
+    10% {
+      -webkit-transform: scale(0.91);
+      transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in; }
+    17% {
+      -webkit-transform: scale(0.98);
+      transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out; }
+    33% {
+      -webkit-transform: scale(0.87);
+      transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in; }
+    45% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out; } }
+  
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out; }
+    10% {
+      -webkit-transform: scale(0.91);
+      transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in; }
+    17% {
+      -webkit-transform: scale(0.98);
+      transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out; }
+    33% {
+      -webkit-transform: scale(0.87);
+      transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in; }
+    45% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out; } }
+
+      .flex-container {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        text-align: center;
+        padding: 1em 0 2em; }
+        .flex-container img {
+          margin: auto;
+          width: 350px;
+          height: 350px; }
+          @media only screen and (min-width: 992px) {
+            .flex-container img {
+              margin: 0; } }
+        @media only screen and (min-width: 992px) {
+          .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center; } }
+        .flex-container__item {
+          max-width: 470px;
+          padding: 1.5em 0;
+          margin: auto; }
+          @media only screen and (min-width: 992px) {
+            .flex-container__item {
+              margin: 0;
+              padding: 1em;
+              max-width: 450px; } }
+          @media only screen and (min-width: 1200px) {
+            .flex-container__item {
+              padding: .5em;
+              max-width: 392px; } }
+          .flex-container__item a img {
+            transition: .3s; }
+          .flex-container__item a img:hover {
+            transform: scale(1.1); }
+        .flex-container__text {
+          margin-bottom: 0;
+          padding-bottom: 1em; }
+          @media only screen and (min-width: 992px) {
+            .flex-container__text {
+              padding: 1em 0; } }
+      
+      .presentation__item {
+        padding: 1em 0;
+        max-width: 470px;
+        margin: auto; }
+        @media only screen and (min-width: 992px) {
+          .presentation__item {
+            margin: 0;
+            text-align: left;
+            padding: 1em;
+            max-width: 600px; } }
