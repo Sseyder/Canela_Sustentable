@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canela Sustentable</title>
+    <meta name="description" content="Para adoptar hábitos alimenticios saludables te propongo 3 maneras de lograrlo: consulta online, consulta presencial o a tu ritmo con los planes alimentarios.">
+    <meta name="keywords" content="dieta equilibrada, nutricionista online, buena alimentacion, nutricionista, nutricion deportiva, alimentacion balanceada">
+    <link rel="icon" href="multimedia/flavicon.png" sizes="16x16" type="image/png">
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- mi css -->
+    <link rel="stylesheet" href="/estilos/style.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/multimedia/canela_logo.png" alt="sofia duca nutricionista logo" class="nav__logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="/multimedia/menu.svg" class="nav__toggle" alt="toggle">
+                </button>
+
+                <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center me-auto mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item nav__item">
+                            <a class="nav-link nav__link" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link nav__link" href="/pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link nav__link" href="/pages/novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link nav__link" href="/pages/sobrenosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link nav__link" href="/pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <div class="text-center">
+                        <a href="/pages/productos.html" class="btn heartbeat"><span class="btn__text">¡TIENDA!</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <h1>¡Elegi el mejor producto para vos de una seleccion variada!</h1>
+        </section>
+    </header>
+
+    <main>
+        <!-- introducción blog -->
+        <section class="shop-introduction">
+            <h2>Bienvenide <span id="nombre"> </span> a mi tienda online</h2>
+            <p><strong>La mejor seleccion de productos para todes</strong></p>
+        </section>
+
+        <!-- selector desplegable -->
+        <section class="select-container">
+            <select name="select" class="select" id="categoria">
+                <option value="todos">Todos los productos</option>
+                <option value="planes">Cepillos de Dientes</option>
+                <option value="online">Pads Desmaquillantes</option>
+                <option value="presenciales">Limpiador Dental</option>
+                <option value="antropometria">Shampoos</option>
+                <option value="recetarios">Mascarillas</option>
+
+            </select>
+        </section>
+
+        <!-- contenido shop -->
+        <section class="shop-container" id="servicios">
+            <article class="shop-container__item">
+                <img src="/multimedia/pads_desmaquillantes.jpg" alt="Pads desmaquillantes">
+                <h3>Pads Desmaquillantes</h3>
+                <p>Ideales para quitar el maquillaje</p>
+                <p class="shop-container__precio">250$</p>
+                <button class="btn">
+                    <span> Comprar!</span>
+                </button>
+            </article>
+
+            <article class="shop-container__item">
+                <img src="/multimedia/limpiador_dental.jpeg" alt="limpiador dental">
+                <h3>Limpiador Dental</h3>
+                <p>Perfecto para mantener una buena higiene bucal</p>
+                <p class="shop-container__precio">200$</p>
+                <button class="btn">
+                    <span> Comprar!</span>
+                </button>
+            </article>
+
+            <article class="shop-container__item">
+                <img src="/multimedia/mascarilla_de_arcilla.jpg" alt="Mascarilla de Arcilla">
+                <h3>Mascarilla de Arcilla</h3>
+                <p>Mascarilla exfoliante natural</p>
+                <p class="shop-container__precio">300$</p>
+                <button class="btn">
+                    <span> Comprar!</span>
+                </button>
+            </article>
+
+            <article class="shop-container__item">
+                <img src="/multimedia/desodorante_natural.jpeg" alt="Desodorante Natural">
+                <h3>Desodorante Natural</h3>
+                <p>Desodorante para el cuerpo hecho con componentes naturales</p>
+                <p class="shop-container__precio">150$</p>
+                <button class="btn">
+                    <span> Comprar!</span>
+                </button>
+            </article>
+
+            <article class="shop-container__item">
+                <img src="/multimedia/cepillo_dientes_bambu3.jpeg" alt="Cepillo de Dientes">
+                <h3>Cepillo de Dientes</h3>
+                <p>Hecho con cerdas de bamboo para que luego de usarlo se pueda desechar facilmente</p>
+                <p class="shop-container__precio">70$</p>
+                <button class="btn">
+                    <span> Comprar!</span>
+                </button>
+            </article>
+
+            <article class="shop-container__item">
+                <img src="/multimedia/shampoo_solido3.jpeg" alt="Shampoo Solido">
+                <h3>Shampoo Solido</h3>
+                <p>Shampoo vegano, 100% natural, sin quimicos agregados</p>
+                <p class="shop-container__precio">180$</p>
+                <button class="btn">
+                    <span> Comprar!</span>
+                </button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-newsletter">
+            <span class="iconify footer-newsletter__icon" data-icon="fluent:mail-20-regular" data-inline="true"></span>
+
+            <form action="" method="" class="footer-newsletter__form">
+                <div class="footer-newsletter__inputs">
+                    <label for="fullname"></label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Nombre y Apellido" required>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                </div>
+
+                <div> 
+                    <input type="submit" value="Suscribirme" class="btn btn__text footer-newsletter__btn">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer-info">
+            <div class="footer-info__item-1">
+                <a href="/index.html"><img src="/multimedia/canela_logo.png" class="footer-info__img" alt="logo"></a>
+            </div>
+
+            <div class="footer-info__item-2">
+                <a href="https://www.facebook.com"><span class="footer-info__icon iconify" data-icon="bx:bxl-facebook-square" data-inline="true"></span></a>
+                <a href="https://web.whatsapp.com" target="_blank"> <span class="footer-info__icon iconify" data-icon="dashicons:whatsapp" data-inline="true"></span></a>
+                <a href="https://www.instagram.com/canela.sustentable/?hl=es"><span class="footer-info__icon iconify" data-icon="ant-design:instagram-filled" data-inline="true"></span></a>
+            </div>
+
+            <div class="footer-info__item">
+                <p class="footer-info__text">Canela Sustentable</p>
+                <p class="footer-info__text">Los mejores productos naturales</p>
+                <p class="footer-info__text">Desarrollado por Marcelo Leonel Marsilli</p>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
